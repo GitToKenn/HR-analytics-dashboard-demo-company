@@ -1,43 +1,70 @@
-  # HR Analytics Dashboard – Demo Company
+# HR Analytics Dashboard – Demo Company  
 
 This project is inspired by an HR analytics dashboard exercise, reimagined with a fully **synthetic dataset**.  
 Instead of relying on the widely reused IBM HR dataset, every column here has been **randomised and modified** from a public example to create a more realistic, anonymised version.  
 
 The goal is to build a structured, reproducible pipeline that prepares the data for **employee attrition analysis and dashboard visualisation**. With the cleaned dataset, we can explore insights such as:  
-
 - 📊 **Attrition patterns** by department, job role, and age group  
 - 👥 Workforce composition across education, gender, and marital status  
-- ⏳ Career dynamics: years at company, promotions, and manager changes   
-
-🛠️ **Status**: Dasboard in Progress
-🔮 **Next Step**: Add reasoning notes, consistency checks, and first dashboard draft 
-🔒 **Repo**: Private 
+- ⏳ Career dynamics: years at company, promotions, and manager changes  
 
 ---
 
-## 📌 Project Goals
+🛠️ **Status**: First dashboard (Employee Attrition) completed  
+🔮 **Next Step**: Expand reasoning notes, add consistency checks, and develop additional dashboards  
+🔓 **Repo**: Public  
 
-- Build a **synthetic HR dataset** for portfolio use (randomised & anonymised from a public base)  
-- Prepare a **clean data pipeline** for analysis and dashboarding  
-- Explore **attrition patterns** by department, role, and demographics  
-- Analyse **career dynamics**: years at company, promotions, manager changes  
-- Develop a **dashboard** showcasing workforce and attrition insights  
+---
+
+## 🚀 Current Output  
+
+#### Setting
+```python
+from IPython.display import display, Image
+```
+Here is the latest dashboard:
+
+<div style="display: flex; justify-content: space-around; gap: 40px;">
+  <img src="image/HR_Analytics_EmployeeAttrition_2025-09-27_20-51.png" width="800">
+</div>
+
+---
+
+*Then here is the link to view the interactive dashboard on Tableau Public*  
+
+[Employee Attrition Dashboard on Tableau Public](https://public.tableau.com/views/HRAnalyticsDashboardDemoCompany/EmployeeAttritionDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+---
+
+## 📌 Current Project Goals
+
+- Refine the **synthetic HR dataset** to ensure randomisation is logical and well-justified  
+- Improve the **data preparation notebook** with reasoning notes and consistency checks  
+- Analyse **additional insights** beyond attrition (e.g. job satisfaction, promotions, demographics)  
+- Build **new dashboards** to showcase these insights, with details documented in a dedicated insights file  
 
 ---
 
 ## 📂 Project Structure
 
 
-- [README.md](README.md) – Overview & docs  
-- [notebooks/](notebooks/) – Jupyter notebooks  
-  - [01. data preparation.ipynb](notebooks/01.%20data%20preparation.ipynb) – HR data cleaning  
+- [README.md](README.md) – Project overview & documentation  
+- [notebook/](notebook/) – Jupyter notebooks  
+  - [01. data preparation.ipynb](notebook/01.%20data%20preparation.ipynb) – Synthetic HR data cleaning & preparation  
 - [data/](data/) – Datasets  
-  - [original/](data/original/) – Raw HR data  
+  - [original/](data/original/) – Raw HR data (excluded via .gitignore)  
     - [HR Data.xlsx](data/original/HR%20Data.xlsx)  
-  - [modified/](data/modified/) – Synthetic HR data  
+  - [modified/](data/modified/) – Synthetic HR dataset (portfolio-ready)  
     - [HRDataset_Synthetic_2025-09-27_19-18.xlsx](data/modified/HRDataset_Synthetic_2025-09-27_19-18.xlsx)  
-- [dashboard/](dashboard/) – Dashboard (WIP)  
-- [.gitignore](.gitignore) – Ignore raw/temp files  
+- [dashboard/](dashboard/) – Tableau workbooks (local only, excluded via .gitignore)  
+  - HR Analytics Dashboard – Demo Company.twb  
+  - Tutorial Dashboard.twb  
+- [image/](image/) – Dashboard exports (screenshots)  
+  - HR_Analytics_EmployeeAttrition_2025-09-27_20-51.png  
+- [assets/](assets/) – Design assets (excluded via .gitignore)  
+  - [background/](assets/background/) – Dashboard background templates  
+  - [linkedin_media/](assets/linkedin_media/) – LinkedIn visuals / promotional media  
+- [.gitignore](.gitignore) – Ignore raw data, Tableau files, and media assets  
 
 ---
 
@@ -49,18 +76,24 @@ root/
 ├── .gitignore
 ├── data/
 │   ├── original/
-│       └── HR Data.xlsx
+│   │   └── HR Data.xlsx
 │   └── modified/
 │       └── HRDataset_Synthetic_2025-09-27_19-18.xlsx
-├── notebooks/
+├── notebook/
 │   └── 01. data preparation.ipynb
-└── dashboard/
-    └── soon
+├── dashboard/
+│   ├── HR Analytics Dashboard – Demo Company.twb
+│   └── Tutorial Dashboard.twb
+├── image/
+│   └── HR_Analytics_EmployeeAttrition_2025-09-27_20-51.png
+└── assets/
+    ├── background/
+    │   └── 1st Ver _ HR Analytics Dashboard_Employee Attrition Dashboard.png
+    └── linkedin_media/
 ```
 ---
 
 
----
 
 ## 📊 Dataset Overview
 
@@ -93,15 +126,17 @@ root/
 
 ---
 
-## ✨ Outputs
+## 🚀 Outputs  
 
-The project produces a **modified HR dataset** based on the IBM HR Analytics schema.  
-- All columns from the original dataset are preserved.  
-- Values are **randomised and rebalanced** with realistic business rules (e.g., JobRole ↔ Department, JobLevel ↔ Income, Tenure constraints).  
-- This ensures the data remains **anonymised** but still **credible for analysis and dashboarding**.  
+- **Synthetic HR dataset** (randomised & anonymised, portfolio-ready)  
+  - Preserves all original columns with realistic business rules applied  
+  - Suitable for reproducible analysis and dashboarding  
 
-Currently, a **modified version of the dataset is ready** and can be directly used to build dashboards and visualisations.  
+- **Dashboards**  
+  - *Employee Attrition Dashboard* (2025-09-27) – initial export completed  
+  - Visualises attrition rate, demographics, education field, and job satisfaction  
 
+👉 The dataset is ready for reuse, and new dashboards will be added as more insights are explored.  
 
 ---
 
