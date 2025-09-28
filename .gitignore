@@ -1,17 +1,19 @@
-# Ignore only RAW data files
+# Ignore RAW or large data files
 data/original/
-data/raw/*.csv
-data/raw/*.zip
-data/raw/*.7z
+data/raw/*
+
+# Ignore Jupyter checkpoints
 notebook/.ipynb_checkpoints/
 
 # Ignore media used for LinkedIn post exports
-linkedin_media/
+assets/linkedin_media/*
+
+# Ignore media used for dashboard backgrounds
+assets/background/*
+
+# Ignore Tableau files when pushing to GitHub
+*.twb
+*.twbx
 
 # Ignore temporary files
 *.twbr
-
-#ignore unfinished dasboard files
-*.twb
-
-#ignore original
