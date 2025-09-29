@@ -10,6 +10,7 @@ The goal is to build a structured, reproducible pipeline that prepares the data 
 
 ---
 
+🔗 **Featured on LinkedIn** : [View Post](https://www.linkedin.com/posts/syifa-alia-balqis_dataanalytics-tableau-python-activity-7378313421747974144-nT_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnQ7pMBVWGhjXpj9_dswWCCHQQgDVd7MLo)                             
 🛠️ **Status**: First dashboard (Employee Attrition) completed  
 🔮 **Next Step**: Expand reasoning notes, add consistency checks, and develop additional dashboards  
 🔓 **Repo**: Public  
